@@ -53,7 +53,7 @@ app.post('/form',
   (req, res) => {
     let newMovie = req.body
     newMovie = {"id":movies.length, "title":newMovie.title, "poster":newMovie.poster, "summary":newMovie.summary}
-    movies = fs.readFile('src/data/list.json', (err, data) => {  
+    fs.readFile('src/data/list.json', (err, data) => {  
       if (err) throw err;
       movies = JSON.parse(data);
     })
