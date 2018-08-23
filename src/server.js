@@ -1,5 +1,6 @@
 import express from 'express'
 import bodyParser from 'body-parser'
+import { isNull } from 'util';
 const app = express()
 const fs = require('fs')
 let movies = fs.readFile('src/data/list.json', (err, data) => {
@@ -44,6 +45,12 @@ app.get("/movies:id",
 app.post('/Admin',
   (req, res) => {
     let newMovie = req.body
+    const errors = []
+    const validateField = (field, msg) => (!field || field.trim().length === 0) && errors.push(msg)
+    validateField(newMovie.title, 'titre obligatoire')
+    validateField(newMovie.poster, 'image obligatoire')
+    validateField(newMovie.summary, 'summary obligatoire')
+    if (errors.length > 0) return res.status(400).send(errors)
     newMovie = { "id": movies.length, "title": newMovie.title, "poster": newMovie.poster, "summary": newMovie.summary }
     movies.push(newMovie)
     let data = JSON.stringify(movies, null, 2);
