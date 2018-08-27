@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "title": "Les indestructibles 2",
+        "poster": "image1",
+        "summary": "Notre famille de super-héros préférée est de retour! Cette fois c’est Hélène qui se retrouve sur le devant de la scène laissant à Bob le soin de mener à bien les mille et une missions de la vie quotidienne et de s’occuper de Violette, Flèche et de bébé Jack-Jack. C’est un changement de rythme difficile pour la famille d’autant que personne ne mesure réellement l’étendue des incroyables pouvoirs du petit dernier… Lorsqu’un nouvel ennemi fait surface, la famille et Frozone vont devoir s’allier comme jamais pour déjouer son plan machiavélique"
+    },
+    {
+        "id": 1,
+        "title": "Moonlight",
+        "poster": "image2",
+        "summary": "Pendant trois périodes cruciales de sa vie, Chiron, un afro-américain de Miami se bat contre son milieu (scolaire) et sa famille (mère droguée) pour vivre son homosexualité, essayant de s'affirmer tout en demeurant fidèle à lui-même. Enfant, il est régulièrement martyrisé par les enfants de son âge. Juan, un dealer, et sa conjointe lui offrent régulièrement l'hospitalité. Il est isolé et subit un harcèlement quotidien. Un seul enfant lui offre un contact amical, Kevin."
+    },
+    {
+        "id": 2,
+        "title": "Shape of water",
+        "poster": "image3",
+        "summary": "Elisa Esposito est muette. Elle travaille dans un laboratoire gouvernemental ultrasecret comme concierge. Elle mène une existence routinière et sans histoire mais sa vie bascule à jamais lorsqu'elle et sa collègue Zelda découvrent une expérience encore plus secrète que les autres : elle découvre l'existence d'une créature amphibie cachée dans l'un des bassins de l'établissement."
+    },
+    {
+        "id": 3,
+        "title": "Blade Runner 2049",
+        "poster": "image4",
+        "summary": "En 2049, la société est fragilisée par les nombreuses tensions entre les humains et leurs esclaves créés par bioingénierie. L'officier K est un Blade Runner : il fait partie d'une force d'intervention d'élite chargée de trouver et d'éliminer ceux qui n'obéissent pas aux ordres des humains. Lorsqu'il découvre un secret enfoui depuis longtemps et capable de changer le monde, les plus hautes instances décident que c'est à son tour d'être traqué et éliminé."
+    },
+    {
+        "id": 4,
+        "title": "L'Assassinat de Jesse James par le lâche Robert Ford",
+        "poster": "image5",
+        "summary": "De braquages en règlements de comptes, le charismatique et imprévisible desperado Jesse James s'est lancé dans une guerre sans merci contre ceux qui veulent sa peau. Tout entier prêt à mener une guerre sans relâche contre les unionistes qui ont ruiné sa vie d'homme, il s'adjoint le concours de Robert Ford."
+    }
+]

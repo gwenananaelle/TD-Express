@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "nodemon"
+    "serve": "nodemon",
+    "test": "cross-env NODE_ENV=test mocha -r babel-register"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,14 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "nodemon": "^1.18.3"
+    "cross-env": "^5.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.3",
+    "should": "^13.2.3",
+    "supertest": "^3.1.0"
   },
   "dependencies": {
+    "config": "^2.0.1",
     "express": "^4.16.3"
   }
 }
