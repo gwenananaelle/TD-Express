@@ -53,19 +53,15 @@ app.delete("/movies:id",
     return res.status(204).send('film supprimé')
   }
 )
-// Add or update a movie
 app.post('/Admin',
   (req, res) => {
     let newMovie = req.body
-    //check form for errors
     const errors = []
     const validateField = (field, msg) => (!field || field.trim().length === 0) && errors.push(msg)
     validateField(newMovie.title, 'titre obligatoire')
     validateField(newMovie.poster, 'image obligatoire')
     validateField(newMovie.summary, 'summary obligatoire')
     if (errors.length > 0) return res.status(400).send(errors)
-    //define newMovie
-    //if newMovie.id then update the movie
     if (newMovie.id) {
       const updatedMovie = movies.find(element => element.id == newMovie.id)
       if (!updatedMovie) {

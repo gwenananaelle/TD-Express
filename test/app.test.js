@@ -96,7 +96,21 @@ describe('post /admin', () => {
             should.equal(body.poster, 'image1')
             should.equal(body.summary, 'bla bla bla')
         })
-        .end(done)
+        .end(() => {
+            supertest(app)
+            .get('/movies3')
+            .expect(200)
+            .expect(({body}) => {
+                should.exist(body)
+                body.should.be.a.Object
+                body.should.have.only.keys('id', 'title', 'poster', 'summary')
+                should.equal(body.id, 3)
+                should.equal(body.title, 'movie updated')
+                should.equal(body.poster, 'image1')
+                should.equal(body.summary, 'bla bla bla')
+            })
+            .end(done)
+        })
     })
     it('should send a 404 error, movie updated doesn\'t exist', done => {
         supertest(app)
